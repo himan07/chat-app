@@ -39,8 +39,8 @@ class Server {
                     }
 
                     System.out.println("Client: " + msg);
-
                 }
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -64,6 +64,7 @@ class Server {
                         break;
                     }
                 }
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
