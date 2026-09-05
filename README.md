@@ -150,11 +150,3 @@ This is a teaching example, not production code. Current rough edges:
 - **Typo in the method name:** `StatrtReading()` should be `startReading()`. Java convention is also `camelCase` for methods, not `PascalCase`.
 
 ---
-
-## Possible next steps
-
-- Loop `accept()` and give each client its own thread to support a multi-user chat room
-- Broadcast: relay each client's message to all other connected clients
-- Close sockets and exit cleanly on `Exit`
-- Add usernames and timestamps to messages
-- Move the port to a command-line argument instead of hardcoding it
