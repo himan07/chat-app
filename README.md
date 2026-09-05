@@ -148,5 +148,3 @@ This is a teaching example, not production code. Current rough edges:
 - **`catch` is inside the loop.** An error prints a stack trace and the loop continues rather than shutting down cleanly.
 - **No usernames, timestamps, or message history.**
 - **Typo in the method name:** `StatrtReading()` should be `startReading()`. Java convention is also `camelCase` for methods, not `PascalCase`.
-
----
