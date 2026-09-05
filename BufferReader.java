@@ -1,6 +1,0 @@
-/**
- * BufferReader
- */
-public class BufferReader {
-
-}
