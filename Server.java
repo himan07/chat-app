@@ -53,7 +53,7 @@ class Server {
         Runnable r2 = () -> {
             System.out.println("Writer started...");
             try {
-                while (true) {
+                while (true && !socket.isClosed()) {
                     BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
                     String content = br1.readLine();
                     out.println(content);
