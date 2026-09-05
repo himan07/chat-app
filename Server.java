@@ -29,19 +29,19 @@ class Server {
     public void StatrtReading() {
         Runnable r1 = () -> {
             System.out.println("Reader started...");
+            try {
             while (true) {
-                try {
                     String msg = br.readLine();
-                    if (msg == null || msg.equals("Exit")) {
+                    if (msg == null || msg.equals("exit")) {
                         System.out.println("Client has terminated the chat session...");
                         break;
                     }
 
                     System.out.println("Client: " + msg);
 
-                } catch (Exception e) {
-                    e.printStackTrace();
                 }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         };
 
@@ -51,15 +51,15 @@ class Server {
     public void StartWriting() {
         Runnable r2 = () -> {
             System.out.println("Writer started...");
+            try {
             while (true) {
-                try {
                     BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
                     String content = br1.readLine();
                     out.println(content);
                     out.flush();
-                } catch (Exception e) {
-                    e.printStackTrace();
                 }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         };
 
