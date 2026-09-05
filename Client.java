@@ -55,6 +55,11 @@ import java.io.*;
                     String content = br1.readLine();
                     out.println(content);
                     out.flush();
+
+                    if(content.equals("exit")){
+                        socket.close();
+                        break;
+                    }
                 }
             } catch (Exception e) {
                 e.printStackTrace();
